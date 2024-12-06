@@ -2,7 +2,7 @@
 const { class: className } = Astro.props;
 import { Image } from "astro:assets";
 import { Button } from "@/components/ui/button";
-import KittyAstronaut from "@/assets/KittyAstronaut.svg";
+import bbq from "@/assets/bbq.svg";
 ---
 
 <div
@@ -15,10 +15,8 @@ import KittyAstronaut from "@/assets/KittyAstronaut.svg";
     <div
       class="flex flex-col gap-4 md:w-1/2 p-8 justify-center items-center md:items-start"
     >
-      <h1
-        class="text-pretty text-center md:text-left md:text-4xl lg:text-5xl tracking-wide"
-      >
-        Elevate Your Documentation with a <i class="text-primary">Celestial</i> Touch
+      <h1 class="text-pretty text-center md:text-left md:text-4xl lg:text-5xl tracking-wide">
+        Cook, Learn, and Grow with <i class="text-primary">Chef Mait</i>
       </h1>
       <a href="/getting-started" class="py-4">
         <Button size="lg" className="rounded-lg">
@@ -27,7 +25,7 @@ import KittyAstronaut from "@/assets/KittyAstronaut.svg";
       </a>
     </div>
     <div class="hidden md:flex w-1/2 justify-center align-middle">
-      <Image src={KittyAstronaut} alt="404" />
+      <Image src={bbq} alt="bbq monster" />
     </div>
   </div>
 </div>
