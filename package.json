@@ -1,15 +1,15 @@
 {
-  "name": "celestialdocs",
+  "name": "cook-with-mait",
   "type": "module",
-  "version": "0.0.5",
+  "version": "0.0.1",
   "description": "Documentation template using AstroJS and Shadcn",
-  "author": "Hyperoot <rajesh@hyperoot.dev>",
+  "author": "Mait <mait.kaasik@outlook.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HYP3R00T/CelestialDocs"
+    "url": "https://github.com/maitkaa/maitkaa.github.io.git"
   },
-  "homepage": "https://celestialdocs.hyperoot.dev/",
+  "homepage": "https://maitkaa.github.io",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

@@ -6,15 +6,14 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://celestial.hyperoot.dev",
+  site: "https://maitkaa.github.io",
   markdown: {
     smartypants: true,
     syntaxHighlight: "shiki",
     shikiConfig: {
-      // theme: "catppuccin-mocha",
       themes: {
-        light: "catppuccin-latte",
-        dark: "catppuccin-macchiato",
+        light: "snazzy-light",
+        dark: "github-dark",
       },
     },
     rehypePlugins: [
