@@ -1,0 +1,29 @@
+---
+import {Timer, ChefHat, Users, CookingPot} from "lucide-react";
+import Card from "@/components/Card.astro"
+
+interface Props {
+    totalTime: string;
+    difficulty: "Easy" | "Medium" | "Hard";
+    servings: number;
+}
+
+const { totalTime, difficulty, servings } = Astro.props;
+---
+
+<Card className="p-4" icon={CookingPot}>
+    <div class="grid grid-cols-3 gap-4">
+        <div class="flex items-center justify-center gap-2">
+            <Timer className="w-4 h-4" />
+            <span>{totalTime}</span>
+        </div>
+        <div class="flex items-center justify-center gap-2 border-x border-border px-4">
+            <ChefHat className="w-4 h-4" />
+            <span>{difficulty}</span>
+        </div>
+        <div class="flex items-center justify-center gap-2">
+            <Users className="w-4 h-4" />
+            <span>{servings} servings</span>
+        </div>
+    </div>
+</Card>

@@ -6,7 +6,13 @@ difficulty: Easy
 servings: Makes 1 cup
 ---
 import Callout from "@/components/Callout.astro";
+import RecipeSummary from "@/components/RecipeSummary.astro"
 
+<RecipeSummary
+    totalTime="30 min"
+    difficulty="Medium"
+    servings={4}
+/>
 <Callout variant="tip">
     Let butter soften at room temperature for 1 hour before starting.
 </Callout>
