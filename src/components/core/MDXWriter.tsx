@@ -28,7 +28,7 @@ import {
     Separator,
 } from "@mdxeditor/editor";
 
-export function Writer() {
+export default function MDXWriter() {
   const [content, setContent] = useState("");
 
   return (
