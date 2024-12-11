@@ -7,7 +7,7 @@ import { Search } from "@/components/core/Search";
 import { Button } from "@/components/ui/button";
 
 import { docconfig, SITE } from "@/config";
-import { Github } from "lucide-react";
+import {Github, PencilIcon} from "lucide-react";
 
 // To pass the tailwindcss classes to the astro component
 const { class: className } = Astro.props;
@@ -56,12 +56,23 @@ const { class: className } = Astro.props;
       }
       <div class="md:hidden flex flex-row-reverse gap-4">
         <HamNavMenu />
+        <a href={'/writer'} target="_blank">
+          <Button client:load className="" variant="ghost" size="icon">
+            <PencilIcon className="w-[1.2rem] h-[1.2rem]" />
+          </Button>
+        </a>
         <ModeToggle client:load transition:persist />
       </div>
 
       <div class="flex-row gap-4 hidden md:flex">
         <ModeToggle client:load transition:persist />
       </div>
+
+      <a href={'/writer'} target="_blank" class="flex-row gap-4 hidden md:flex">
+        <Button client:load className="" variant="ghost" size="icon">
+          <PencilIcon className="w-[1.2rem] h-[1.2rem]" />
+        </Button>
+      </a>
     </div>
   </div>
 </header>

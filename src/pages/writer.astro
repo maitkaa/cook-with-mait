@@ -1,0 +1,10 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Writer } from "@/components/core/Writer";
+---
+
+<BaseLayout title="Writer" description="MDX Editor">
+    <div class="container mx-auto p-4">
+        <Writer client:load />
+    </div>
+</BaseLayout>
